@@ -1,0 +1,114 @@
+//Experiment 4:Do the following commands on the terminal.
+
+//1. man 2. ls, echo, read 3. more, less, cat
+//4. cd, mkdir, pwd, find 5. mv, cp, rm ,tar
+
+1.man-Displays the user manual of any command.
+Syntax: man [option] command
+man ls
+man -f ls
+man -k copy
+man -a printf
+
+2.ls,echo,read
+ls-List Directory Contents
+Syntax: ls [option] [directory]
+ls
+ls -l
+ls -la
+ls -lh
+ls -R
+ls -lt
+
+echo-Display Message
+Syntax: echo [option] "text"
+echo Hello
+echo -n "Hello"
+echo -e "Hello\nWorld"
+echo -e "Name:\tAleena"
+
+read-Take Input from User
+Syntax: read variable
+read name
+echo $name
+
+read -p "Enter name: " name
+read -s password
+read -t 5 age
+read -n 4 pin
+
+3.more, less, cat
+more-View File Page by Page
+Syntax: more file
+more file.txt
+more +5 file.txt
+
+less-Advanced File Viewer
+Syntax: less file
+less file.txt
+
+cat-Display File Conten
+Syntax: cat [option] file
+cat file.txt
+cat -n file.txt
+cat -b file.txt
+cat -s file.txt
+
+4. cd, mkdir, pwd, find
+cd-Change Directory
+Syntax: cd directory
+cd Documents
+cd ..
+cd /
+cd ~
+
+mkdir-Create Directory
+Syntax: mkdir [option] dirname
+mkdir test
+mkdir -p a/b/c
+mkdir -v project
+
+pwd-Present Working Directory
+Syntax: pwd
+pwd
+pwd -P
+
+find-Search Files
+Syntax: find path [option] expression
+find . -name file.txt
+find /home -type d
+find . -size +1M
+find . -mtime -1
+find . -name "*.tmp" -delete
+
+
+5.mv, cp, rm ,tar
+mv-Move / Rename Files
+Syntax: mv source destination
+mv file1 file2
+mv file.txt folder/
+mv -i file1 file2
+
+cp-Copy Files
+Syntax: cp [option] source destination
+cp file1 file2
+cp -r dir1 dir2
+cp -ip file1 file2
+
+rm-Remove Files
+Syntax: rm [option] file
+rm file.txt
+rm -i file.txt
+rm -r folder
+rm -rf folder
+
+tar-Archive Files
+Syntax: tar [option] archive file
+tar -cvf files.tar file1 file2
+tar -xvf files.tar
+tar -tvf files.tar
+tar -czvf files.tar.gz folder/
+tar -xzvf files.tar.gz
+
+
+
